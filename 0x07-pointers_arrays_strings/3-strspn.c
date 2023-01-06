@@ -5,9 +5,9 @@
  * @accept: input
  * Return: Always 0 (Success)
  */
-unsighned int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n - 0;
+	unsigned int n = 0;
 	int r;
 
 	while (*s)
@@ -19,7 +19,7 @@ unsighned int _strspn(char *s, char *accept)
 				n++;
 				break;
 			}
-			else if (accept[r + 1] == '\n')
+			else if (accept[r + 1] == '\0')
 				return (n);
 		}
 		s++;
